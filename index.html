@@ -16,89 +16,20 @@
   <script type="text/javascript" src="./resources/js/tests.js"></script>
 </head>
 <body>
-  <header class="navbar navbar-default navbar-fixed-top">
-    ::before
-    <div id="header" class="container-fluid">
-      ::before
-      <div class="navbar-header">
-        ::before
-        <a id="logo" class="navbar-brand" href="#">
-          trackster
-        </a>
-        ::after
-      </div>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input id="search-txt" type="text" class="form-control" placeholder="Search">
-        </div>
-        <button id="search-btn" type="submit" class="btn btn-default">
-          <i class="fa fa-search fa-flip-horizontal fa-2x" aria-hidden="true">
-            ...
-          </i>
-        </button>
-      </form>
-      ::after
+  <div class="container-fluid">
+    <div class="row header">
+      <h1 class="col-xs-7 col-xs-offset-1">trackster</h1>
+      <input class="col-xs-2" id="search-input" placeholder="Search">
+      <i class="fa fa-search fa-2x col-xs-1" id="search-button"></i>
     </div>
-    <div id="col-header-desktop" class="container-fluid">
-      ::before
-      <div class="row">
-        ::before
-        <div class="col-xs-1 col=xs-offset-1">
-      </div>
-      <div class="col-xs-3 sortable">
-        "Song"
-        <i class="fa fa-sort hideable" aria-hidden="true">
-          ::before
-        </i>
-      </div>
-      <div class="col-xs-2 sortable">
-        "Artist"
-        <i class="fa fa-sort" aria-hidden="true">
-          ::before
-        </i>
-      </div>
-      <div class="col-xs-2">
-        Album
-      </div>
-      <div class="col-xs-2 sortable">
-        "Popularity"
-        <i class="fa fa-sort" aria-hidden="true">
-        ::before
-      </i>
-      </div>
-      ::after
-    </div>
-    ::after
-  </div>
-  <div id="col-header-mobile" class="container-fluid">
-    <div class="row">
-      <div class="col-xs-1 col-xs-offset-1">
-      </div>
-      <div class="col-xs-3 sortable">
-        "Song"
-        <i class="fa fa-sort hideable" aria-hidden="true">
-        </i>
-      </div>
-      <div class="col-xs-2 sortable">
-        "Art"
-        <i class="fa fa-sort" aria-hidden="true">
-        </i>
-      </div>
-      <div class="col-xs-2">
-        Alb
-      </div>
-      <div class="col-xs-2 sortable">
-        "Pop"
-        <i class="fa fa-sort" aria-hidden="true">
-        </i>
-      </div>
+    <div class="row attributes">
+      <div class="col-xs-4 col-xs-offset-2 attribute">Song</div>
+      <div class="col-xs-2 attribute">Artist</div>
+      <div class="col-xs-2 attribute">Album Art</div>
+      <div class="col-xs-2 attribute">Listeners</div>
     </div>
   </div>
-  ::after
-  </header>
-  <div id="track-list" class="container-fluid">
-    ::before
-    ::after
+  <div class="container-fluid" id="track-list">
   </div>
 </body>
 </html>
